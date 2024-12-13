@@ -2,9 +2,17 @@ html, body {
     margin: 0;
     min-height: 100%;
 }
+
 * {
     color: white;
+    font-family: 'Courier New', Courier, monospace;
 }
+
+header {
+    padding-top: .8em;
+    text-align: center;
+}
+
 body {
     background-image: url("pictures/bg.webp");
     background-size: cover;
@@ -12,6 +20,33 @@ body {
     background-position: bottom center;
 }
 
-button {
-    background-color: black;
+.content {
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 200px;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.content-title {
+    text-align: center;
+    border: 0.05em solid azure;
+    /* border-radius: 100%; */
+    font-size: 2em;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0.2em 0.2em;
+}
+
+.content-text {
+    margin: 1em;
+    padding: 0 0.5em;
+    border: 0.05em solid azure;
+}
+
+@media screen and (min-width: 768px) {
+    .content {
+        width: 50%;
+        max-width: 550px;
+    }
 }
