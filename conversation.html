@@ -3,21 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
-    <style>
-        span {
-            color: lightgreen;
-        }
-    </style>
     <title>Conversation</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
+    <header class="header" id="header">
     
-        <h3>| <a href="index.html">main</a> | <a href="conversation.html">conversation</a> | <a href="...!!!..."></a> </h3>
-        <h3>| <a href="javascript:history.back()">back</a> |</h3>
+        <h3>
+            
+            <a class="link" id="main-link" href="index.html">main</a>
+            <a class="link" id="conv-link" href="conversation.html">conversation</a>    
+            <a class="link" id="back-link" href="javascript:history.back()">back</a>
+        
+        </h3>
     
     </header>
     
@@ -29,11 +28,13 @@
 
             <h2>Hello!</h2>
             <h2>It's page for conversation</h2>
-            <h4>Here you can disscass with me some problems</h4>
+            <h4>Here you can disscass with me some problems.</h4>
     
         </div>
     
     </div>
+
+    <script src="main.js"></script>
 
 </body>
 </html>

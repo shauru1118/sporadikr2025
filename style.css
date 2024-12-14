@@ -13,10 +13,6 @@ header {
     text-align: center;
 }
 
-.header.red {
-    background-color: red;
-}
-
 body {
     background-image: url("pictures/bg.webp");
     background-size: cover;
