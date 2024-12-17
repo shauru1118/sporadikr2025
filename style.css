@@ -20,6 +20,11 @@ body {
     background-position: bottom center;
 }
 
+.btn {
+    color: white;
+    background: black;
+}
+
 .content {
     margin: 0 auto;
     width: 80%;
