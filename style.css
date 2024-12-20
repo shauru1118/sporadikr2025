@@ -13,6 +13,14 @@ header {
     text-align: center;
 }
 
+.link {
+    padding: 0.1em;
+}
+
+#user-link {
+    text-align: right;
+}
+
 body {
     background-image: url("pictures/bg.webp");
     background-size: cover;
