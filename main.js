@@ -14,8 +14,12 @@ for (let item of links) {
     console.log("done - " + item.text);
 }
 
-// var name = prompt("What is your name?");
-document.querySelector("#user-link").innerHTML = name;
+// if (name == "Unknown") {
+//     var name = prompt("What is your name?");
+// }
+
+// document.querySelector("#user-link").innerHTML = name;
+// document.querySelector("#user_name").innerHTML = name;
 // prompt();
 
 
