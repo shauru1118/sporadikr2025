@@ -57,6 +57,14 @@ body {
     border: 0.05em solid azure;
 }
 
+button {
+    background-color: black;
+}
+
+input {
+    background-color: black;
+}
+
 @media screen and (min-width: 768px) {
     .content {
         width: 50%;
