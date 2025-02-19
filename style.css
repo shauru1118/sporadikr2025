@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     margin: 0;
     min-height: 100%;
 }
@@ -8,25 +9,54 @@ html, body {
     font-family: 'Courier New', Courier, monospace;
 }
 
-header {
-    padding-top: .8em;
-    text-align: center;
-}
-
-.link {
-    padding: 0.1em;
-}
-
-#user-link {
-    text-align: right;
-}
-
 body {
-    background-image: url("pictures/bg.webp");
+    /* background-image: url("pictures/bg.jpg"); */
+    background-color: black;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom center;
 }
+
+header {
+    /* padding-top: .8em; */
+    text-align: center;
+}
+
+.lk {
+    text-align: right;
+    /* padding: 0.1em 1em; */
+    margin: 1em 2em;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#login {
+    margin: 2em;
+    padding: 0.9em;
+}
+
+input {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#text-pressbut {
+    color: black;
+}
+
+.main-title {
+    text-align: center;
+}
+
+.main-descr {
+    text-align: center;
+}
+
 
 .btn {
     color: white;
@@ -55,14 +85,6 @@ body {
     margin: 1em;
     padding: 0 0.5em;
     border: 0.05em solid azure;
-}
-
-button {
-    background-color: black;
-}
-
-input {
-    background-color: black;
 }
 
 @media screen and (min-width: 768px) {
