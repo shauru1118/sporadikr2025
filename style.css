@@ -50,6 +50,10 @@ header {
     font-size: 1.5em;
 }
 
+.lk {
+    margin-left: auto;
+}
+
 main {
     display: flex;
     flex-direction: column;
