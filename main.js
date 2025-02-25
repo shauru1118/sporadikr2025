@@ -1,3 +1,6 @@
+console.log("Hello world!")
+
+
 let presbut = document.querySelector("#pressbut")
 
 presbut.addEventListener('click', loginbut)
@@ -9,3 +12,4 @@ function loginbut() {
     alert("Login_______:    " + l + "\nPassword___:    " + p + "\n")
 
 }
+
