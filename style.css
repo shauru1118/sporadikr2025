@@ -59,11 +59,15 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
     padding: 2em;
 }
 
 .download {
-    color: rgb(14, 129, 152);
+    background-color: rgb(14, 129, 152);
+    padding: 0.2em 0.5em;
+    border-radius: 1em;
+    text-decoration: none;
 }
 
 #login {
@@ -82,13 +86,70 @@ input {
 }
 
 .main-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    /* padding: 2em; */
 }
 
 .main-descr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    /* padding: 2em; */
 }
 
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* padding: 2em; */
+}
+
+.news-content {
+    margin: 2em;
+    padding: 0.6em;
+    border-radius: 0.9em;
+    background-color: #606060;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* padding: 2em; */
+}
+
+.news-1 {
+    float: left;
+}
+
+.news-2 {
+    float: left;
+}
+
+.news-3 {
+    float: left;
+}
+
+.download-list {
+    margin: 2em;
+    padding: 0.6em;
+    width: 100%;
+    background-color: #606060;
+    border-radius: 0.9em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0.4em 1.5em;
+}
 
 .btn {
     color: white;
