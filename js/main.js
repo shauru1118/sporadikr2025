@@ -1,15 +1,12 @@
-console.log("Hello world!")
+let count = 0
 
+let refreshBtn = document.getElementById("ref_btn")
 
-let presbut = document.querySelector("#pressbut")
-
-presbut.addEventListener('click', loginbut)
-
-function loginbut() {
-    let l = document.getElementById("login-input").value
-    let p = document.getElementById("password-input").value
-
-    alert("Login_______:    " + l + "\nPassword___:    " + p + "\n")
-
+function refresh() {
+    count = count + 1
+    let text = document.getElementById("refreshed_text")
+    text.textContent = "Обновлено " + count + " раз(-a)"
+    console.log("Refreshed text: " + text.textContent)
 }
 
+refreshBtn.addEventListener("click", refresh)

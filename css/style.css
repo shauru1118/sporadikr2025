@@ -151,7 +151,36 @@ input {
     padding: 0.4em 1.5em;
 }
 
+.service-content {
+    margin: 2em;
+    padding: 0.6em;
+    width: 100%;
+    background-color: #606060;
+    border-radius: 0.9em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0.4em 1.5em;
+}
+
 .btn {
     color: white;
-    background: black;
+    background-color: rgb(14, 129, 152);
+    border: none;
+    padding: 0.5em;
+    border-radius: 1em;
+    cursor: pointer;
+}
+
+button:hover {
+    border: 1px solid;
+    border-color: aliceblue;
+
+}
+
+button:active {
+    background-color: rgb(10, 83, 96);
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, .5);
 }
