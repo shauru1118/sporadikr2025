@@ -1,3 +1,1 @@
-albert 18-AdA
-ivan 31-IdP
-vlad 06-VdK
+albert#18-AdA ivan#31-IdP vlad#06-VdK

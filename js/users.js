@@ -13,9 +13,9 @@ export async function check_user(login, password) {
         const response = await fetch('../database/users.txt'); // Загружаем файл
         const text = await response.text();
         console.log(text);
-        const users = text.split('\r\n');
-        console.log(users, login + " " + password, users.includes(login + " " + password));
-        if (users.includes(login + " " + password) == true) {
+        const users = text.split(' ');
+        console.log(users, login + "#" + password, users.includes(login + "#" + password));
+        if (users.includes(login + "#" + password) == true) {
             flag = true
         } else {
             flag = false
