@@ -78,19 +78,23 @@ if (login_btn != null) {
     login_btn.addEventListener("click", function () {
         let login__ = login_input.value
         let password__ = password_input.value
-        console.warn("login: " + login__ + "\npassword: " + password__)
-        login = login__
-        password = password__
-        localStorage.setItem("login", login)
-        localStorage.setItem("password", password)
-
-        let lk_name = document.getElementById("lk_name")
-        if (lk_name) {
-            lk_name.innerText = login
+        if (login__ == "") {
+            // login__ = "Unknown"
+            alert("Введите логин!")
         } else {
-            console.log("lk_name: " + true)
-        }
+            console.warn("login: " + login__ + "\npassword: " + password__)
+            login = login__
+            password = password__
+            localStorage.setItem("login", login)
+            localStorage.setItem("password", password)
 
+            let lk_name = document.getElementById("lk_name")
+            if (lk_name) {
+                lk_name.innerText = login
+            } else {
+                console.log("lk_name: " + true)
+            }
+        }
     })
 
 }
