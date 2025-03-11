@@ -1,4 +1,4 @@
-// general code 
+// general code
 
 // fetch('../html/header.html')
 //     .then(response => response.text())
@@ -6,12 +6,11 @@
 //         document.querySelector("header").innerHTML = data
 //     })
 
+import { check_user } from "./users.js"
+// const users = require("./users")
+// ⁡⁢⁣⁢𝗱𝗲𝗳𝗶𝗻𝗲𝘀⁡
 
-
-//defines
-
-// const mysql = require('mysql2');
-
+// let users = require("./users.mjs")
 
 let count = 0
 
@@ -19,7 +18,7 @@ let login = ""
 let password = ""
 
 
-// Get elements
+// ⁡⁢⁣⁢𝗚𝗲𝘁 𝗲𝗹𝗲𝗺𝗲𝗻𝘁𝘀⁡
 
 let refreshBtn = document.getElementById("ref_btn")
 let login_input = document.getElementById("login_input")
@@ -75,30 +74,38 @@ if (refreshBtn != null) {
 if (login_btn != null) {
     console.log("login: " + true)
 
-    login_btn.addEventListener("click", function () {
+    login_btn.addEventListener("click", async function () {
+        console.log("-----------------------------------------------")
         let login__ = login_input.value
         let password__ = password_input.value
         if (login__ == "") {
             // login__ = "Unknown"
             alert("Введите логин!")
+        } else if (password__ == "") {
+            alert("Введите пароль!")
         } else {
-            console.warn("login: " + login__ + "\npassword: " + password__)
-            login = login__
-            password = password__
-            localStorage.setItem("login", login)
-            localStorage.setItem("password", password)
+            if (await check_user(login__, password__) == true) {
+                console.log("login: " + login__ + "\npassword: " + password__)
+                console.warn("Correct login and password!")
+                login = login__
+                password = password__
+                localStorage.setItem("login", login)
+                localStorage.setItem("password", password)
 
-            let lk_name = document.getElementById("lk_name")
-            if (lk_name) {
-                lk_name.innerText = login
+                let lk_name = document.getElementById("lk_name")
+                if (lk_name) {
+                    lk_name.innerText = login
+                } else {
+                    console.log("lk_name: " + true)
+                }
             } else {
-                console.log("lk_name: " + true)
+                console.log("login: " + login__ + "\npassword: " + password__)
+                console.warn("Wrong login or/and password!")
+                alert("Неправильный логин или пароль")
             }
         }
     })
-
 }
 
 // console.log("refreshBtn : ", refreshBtn)
 // console.log("aaa")
-
