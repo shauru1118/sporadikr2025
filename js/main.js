@@ -86,7 +86,7 @@ if (login_btn != null) {
         } else {
             if (await check_user(login__, password__) == true) {
                 console.log("login: " + login__ + "\npassword: " + password__)
-                console.warn("Correct login and password!")
+                console.log("Correct login and password!")
                 login = login__
                 password = password__
                 localStorage.setItem("login", login)
@@ -100,7 +100,7 @@ if (login_btn != null) {
                 }
             } else {
                 console.log("login: " + login__ + "\npassword: " + password__)
-                console.warn("Wrong login or/and password!")
+                console.log("Wrong login or/and password!")
                 alert("Неправильный логин или пароль")
             }
         }
